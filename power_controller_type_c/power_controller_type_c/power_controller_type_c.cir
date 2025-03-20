@@ -1,0 +1,18 @@
+.title KiCad schematic
+.save all
+.probe alli
+.probe p(R1)
+.probe p(R3)
+.probe p(R4)
+.probe p(R2)
+U1 __U1
+R1 VBUS_1 Net-_Q1-G_ 100k
+Q1 __Q1
+R3 VBUS_2 Net-_Q2-G_ 100k
+Q2 __Q2
+U2 __U2
+R4 Net-_R4-Pad1_ Net-_P1-GND-PadA1_ 100
+R2 Net-_R2-Pad1_ Net-_P1-GND-PadA1_ 100
+P2 __P2
+P1 __P1
+.end

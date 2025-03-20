@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "b14fbb1d-2514-4a4d-ad89-bcd81585d776")
 	(paper "A4")
+	(title_block
+		(title "Power controller type C (5V)")
+		(date "2025-03-20")
+		(rev "v0.0.1")
+	)
 	(lib_symbols
 		(symbol "Connector:USB_C_Plug"
 			(pin_names
@@ -878,145 +883,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -1124,155 +990,6 @@
 					(at 0 -3.81 90)
 					(length 1.27)
 					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Diode:BZT52Bxx"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "BZT52Bxx"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Diode_SMD:D_SOD-123F"
-				(at 0 -4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "500mW Zener Diode, SOD-123F"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "zener diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "D?SOD?123F*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "BZT52Bxx_0_1"
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "BZT52Bxx_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1966,38 +1683,112 @@
 		)
 	)
 	(junction
-		(at 114.3 119.38)
+		(at 105.41 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "09e9be0f-e97f-48b4-95d4-7c8b7c3b6372")
+	)
+	(junction
+		(at 152.4 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "114c3dd7-e49a-4b70-afac-1e6f7b5b090b")
+	)
+	(junction
+		(at 148.59 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1dee982e-342d-4871-bbfa-60f85557d7f8")
+	)
+	(junction
+		(at 148.59 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2708b527-a16b-463a-9e78-8d17759a59c9")
 	)
 	(junction
-		(at 140.97 121.92)
+		(at 128.27 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4ea166ac-0a7e-47ff-b788-c1e9d62cb63f")
+		(uuid "2b19c8fc-fd39-46c9-bf70-b97733fed0a1")
 	)
 	(junction
-		(at 130.81 121.92)
+		(at 132.08 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "514dbc97-f469-43c0-b0e5-176479cbe5b3")
 	)
 	(junction
-		(at 114.3 110.49)
+		(at 156.21 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9e785ec4-a8db-4d36-a83c-f5b69b832631")
+		(uuid "7b79fefa-7ec4-4174-bd8e-5ffa508bf846")
 	)
 	(junction
-		(at 140.97 15.24)
+		(at 128.27 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f6a73a31-fc0e-4d25-b470-8343fb005706")
+		(uuid "7e577415-ba4a-4011-952e-8d4a72076552")
+	)
+	(junction
+		(at 127 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93a855c1-33cd-43bb-ac68-984e1d60f4fd")
+	)
+	(junction
+		(at 156.21 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9eb85157-80f1-4417-a3f1-ad708fc65a80")
+	)
+	(junction
+		(at 144.78 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c033d8f8-6ab9-4660-a1d6-24e4c992a5ed")
+	)
+	(junction
+		(at 165.1 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cb3bfa43-d667-446f-a31f-fd2dafd55b67")
+	)
+	(junction
+		(at 124.46 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e048e642-8fe6-4f77-aec4-3f59b18d41f3")
+	)
+	(junction
+		(at 119.38 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e6998849-3e2d-4304-8e48-a9e60e8d3c88")
 	)
 	(wire
 		(pts
-			(xy 106.68 60.96) (xy 166.37 60.96)
+			(xy 128.27 156.21) (xy 144.78 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "000ccd7f-5e48-4a33-a2a3-5f42b0ba1b18")
+	)
+	(wire
+		(pts
+			(xy 149.86 144.78) (xy 152.4 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02ffb629-8ec2-4c7a-92a8-511b4ad87851")
+	)
+	(wire
+		(pts
+			(xy 105.41 77.47) (xy 165.1 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2007,7 +1798,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 38.1) (xy 166.37 38.1)
+			(xy 105.41 54.61) (xy 165.1 54.61)
 		)
 		(stroke
 			(width 0)
@@ -2017,7 +1808,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 20.32) (xy 181.61 15.24)
+			(xy 180.34 36.83) (xy 180.34 31.75)
 		)
 		(stroke
 			(width 0)
@@ -2027,7 +1818,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 15.24) (xy 121.92 20.32)
+			(xy 90.17 31.75) (xy 90.17 36.83)
 		)
 		(stroke
 			(width 0)
@@ -2037,7 +1828,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 110.49) (xy 125.73 110.49)
+			(xy 148.59 135.89) (xy 137.16 135.89)
 		)
 		(stroke
 			(width 0)
@@ -2047,7 +1838,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 17.78) (xy 189.23 20.32)
+			(xy 187.96 34.29) (xy 187.96 36.83)
 		)
 		(stroke
 			(width 0)
@@ -2057,7 +1848,27 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 86.36) (xy 106.68 110.49)
+			(xy 162.56 173.99) (xy 119.38 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12b59a28-7878-468d-8430-96b3c1ddf0a0")
+	)
+	(wire
+		(pts
+			(xy 156.21 163.83) (xy 156.21 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "131bdf6c-596c-4934-b75b-785381edb742")
+	)
+	(wire
+		(pts
+			(xy 105.41 102.87) (xy 105.41 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2067,17 +1878,37 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 121.92) (xy 140.97 15.24)
+			(xy 152.4 135.89) (xy 148.59 135.89)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1dd7f5bb-d9c9-4e93-8e54-73248cf9a7e4")
+		(uuid "14e3c75c-c096-4ed8-bdb9-85930276a1de")
 	)
 	(wire
 		(pts
-			(xy 121.92 15.24) (xy 140.97 15.24)
+			(xy 156.21 109.22) (xy 123.19 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1631ce7a-8b86-41c9-892b-650292875d2d")
+	)
+	(wire
+		(pts
+			(xy 144.78 156.21) (xy 144.78 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f3c130a-30c8-4b1f-8ca8-ab06f1ea09b1")
+	)
+	(wire
+		(pts
+			(xy 90.17 31.75) (xy 156.21 31.75)
 		)
 		(stroke
 			(width 0)
@@ -2087,7 +1918,57 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 118.11) (xy 130.81 121.92)
+			(xy 105.41 69.85) (xy 165.1 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "246febf9-3c4d-4ded-ac77-a991cc3e64ad")
+	)
+	(wire
+		(pts
+			(xy 152.4 144.78) (xy 152.4 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "276117fe-72b3-4bd9-ab89-8742532b90d9")
+	)
+	(wire
+		(pts
+			(xy 128.27 144.78) (xy 128.27 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "276f41a1-f5d9-4c63-883d-9d3f2b1bd6ed")
+	)
+	(wire
+		(pts
+			(xy 81.28 173.99) (xy 119.38 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b8a24d8-8e61-4ef5-a474-3de90f9b9710")
+	)
+	(wire
+		(pts
+			(xy 160.02 170.18) (xy 124.46 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d46fa31-5410-4f81-8639-76f339bb3223")
+	)
+	(wire
+		(pts
+			(xy 132.08 128.27) (xy 132.08 124.46)
 		)
 		(stroke
 			(width 0)
@@ -2097,17 +1978,57 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 81.28) (xy 166.37 81.28)
+			(xy 105.41 95.25) (xy 165.1 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "36692fbe-cfec-40a8-aa16-47b1fb063a09")
+		(uuid "33269522-1eb3-4b13-9a10-319d07ca521f")
 	)
 	(wire
 		(pts
-			(xy 106.68 73.66) (xy 166.37 73.66)
+			(xy 81.28 140.97) (xy 105.41 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34e62bd9-9846-4d36-9365-e9661b44e69f")
+	)
+	(wire
+		(pts
+			(xy 119.38 163.83) (xy 129.54 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ea9d19f-dea9-420b-a48f-4e544a38b47c")
+	)
+	(wire
+		(pts
+			(xy 119.38 173.99) (xy 119.38 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42b0cc9d-62b7-4857-9b90-7336fa17efc4")
+	)
+	(wire
+		(pts
+			(xy 124.46 158.75) (xy 129.54 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f7e2b58-77fa-4373-97e7-db98ed3af599")
+	)
+	(wire
+		(pts
+			(xy 105.41 90.17) (xy 165.1 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2117,7 +2038,17 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 35.56) (xy 166.37 35.56)
+			(xy 128.27 144.78) (xy 139.7 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58d77960-d8fd-4fdd-be15-dc9f4f4cab34")
+	)
+	(wire
+		(pts
+			(xy 105.41 52.07) (xy 165.1 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2127,7 +2058,37 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 45.72) (xy 166.37 45.72)
+			(xy 156.21 31.75) (xy 180.34 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f49897a-8400-4fa8-a1ef-edd2e659096f")
+	)
+	(wire
+		(pts
+			(xy 127 144.78) (xy 128.27 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "618a0440-9a21-444a-9fdb-98cfab408372")
+	)
+	(wire
+		(pts
+			(xy 153.67 163.83) (xy 156.21 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62145f90-9380-42af-90ef-9b5c41518e3c")
+	)
+	(wire
+		(pts
+			(xy 105.41 62.23) (xy 165.1 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2137,17 +2098,57 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 15.24) (xy 181.61 15.24)
+			(xy 127 140.97) (xy 127 144.78)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "69281ba8-ff31-47b8-89e8-233e6155537d")
+		(uuid "6a729c28-06f1-41fc-97a0-9cbc5acf61ff")
 	)
 	(wire
 		(pts
-			(xy 129.54 20.32) (xy 129.54 17.78)
+			(xy 144.78 152.4) (xy 144.78 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "709ca209-cd0e-42e4-8612-b878d0dfaa26")
+	)
+	(wire
+		(pts
+			(xy 147.32 121.92) (xy 160.02 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "734757eb-b424-4e8c-8003-47eb00991dee")
+	)
+	(wire
+		(pts
+			(xy 152.4 140.97) (xy 165.1 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7414f1a3-c46c-47b0-a933-6fa4a283907a")
+	)
+	(wire
+		(pts
+			(xy 144.78 163.83) (xy 146.05 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78d3ed0a-989a-45d6-9f1d-10c4651ad8b3")
+	)
+	(wire
+		(pts
+			(xy 82.55 36.83) (xy 82.55 34.29)
 		)
 		(stroke
 			(width 0)
@@ -2157,7 +2158,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 121.92) (xy 130.81 121.92)
+			(xy 148.59 124.46) (xy 132.08 124.46)
 		)
 		(stroke
 			(width 0)
@@ -2167,17 +2168,17 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 129.54) (xy 140.97 121.92)
+			(xy 105.41 140.97) (xy 127 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "82aafdbb-3a9c-4825-927e-9a50b40edbb4")
+		(uuid "84bb1052-ba87-482f-99bd-5d2ea27c50a2")
 	)
 	(wire
 		(pts
-			(xy 166.37 86.36) (xy 166.37 110.49)
+			(xy 165.1 102.87) (xy 165.1 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2187,7 +2188,17 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 119.38) (xy 114.3 121.92)
+			(xy 124.46 170.18) (xy 124.46 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "884caf13-75e2-44e2-8f6b-39b58dc0291e")
+	)
+	(wire
+		(pts
+			(xy 148.59 127) (xy 148.59 124.46)
 		)
 		(stroke
 			(width 0)
@@ -2197,7 +2208,17 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 121.92) (xy 130.81 124.46)
+			(xy 105.41 97.79) (xy 165.1 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bbb6627-4757-42c5-9047-a840f2b029c8")
+	)
+	(wire
+		(pts
+			(xy 132.08 124.46) (xy 132.08 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2207,7 +2228,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 17.78) (xy 189.23 17.78)
+			(xy 82.55 34.29) (xy 187.96 34.29)
 		)
 		(stroke
 			(width 0)
@@ -2217,7 +2238,17 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 43.18) (xy 166.37 43.18)
+			(xy 113.03 102.87) (xy 113.03 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97ac053f-7cf1-4f74-b600-3f7682c88521")
+	)
+	(wire
+		(pts
+			(xy 105.41 59.69) (xy 165.1 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2227,17 +2258,37 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 121.92) (xy 140.97 121.92)
+			(xy 147.32 116.84) (xy 162.56 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9d2c6b84-2741-442f-b50b-ddd2a36294dd")
+		(uuid "a24a6319-4f64-4394-a049-e8cf13af08d4")
 	)
 	(wire
 		(pts
-			(xy 114.3 110.49) (xy 114.3 111.76)
+			(xy 127 140.97) (xy 127 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a34dad26-4d19-458d-a211-de196f3342d7")
+	)
+	(wire
+		(pts
+			(xy 162.56 116.84) (xy 162.56 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4215aa2-4017-4b67-baae-59b9cca52db8")
+	)
+	(wire
+		(pts
+			(xy 148.59 135.89) (xy 148.59 134.62)
 		)
 		(stroke
 			(width 0)
@@ -2247,7 +2298,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 50.8) (xy 166.37 50.8)
+			(xy 105.41 67.31) (xy 165.1 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2257,27 +2308,27 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 121.92) (xy 130.81 121.92)
+			(xy 165.1 102.87) (xy 113.03 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "afb8e88e-1937-4d9a-b0f1-27cdbf0665e8")
+		(uuid "b4d1df64-8927-4513-8f0e-840a1def331e")
 	)
 	(wire
 		(pts
-			(xy 106.68 78.74) (xy 166.37 78.74)
+			(xy 113.03 133.35) (xy 81.28 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "befcce3a-93f5-4d52-a162-7f286b605c19")
+		(uuid "bea5b41f-4c71-473c-bd91-d11530056398")
 	)
 	(wire
 		(pts
-			(xy 106.68 27.94) (xy 166.37 27.94)
+			(xy 105.41 44.45) (xy 165.1 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2287,7 +2338,27 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 118.11) (xy 114.3 119.38)
+			(xy 128.27 152.4) (xy 128.27 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3a7ee08-8c12-417b-abcd-eda649449e63")
+	)
+	(wire
+		(pts
+			(xy 156.21 31.75) (xy 156.21 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbbff8a4-b437-467a-92da-b4d7bb7f7c67")
+	)
+	(wire
+		(pts
+			(xy 148.59 128.27) (xy 148.59 127)
 		)
 		(stroke
 			(width 0)
@@ -2297,7 +2368,17 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 68.58) (xy 166.37 68.58)
+			(xy 123.19 109.22) (xy 123.19 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d07ee1f3-ca19-4258-982b-ea12df770681")
+	)
+	(wire
+		(pts
+			(xy 105.41 85.09) (xy 165.1 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2307,7 +2388,37 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 30.48) (xy 166.37 30.48)
+			(xy 128.27 153.67) (xy 128.27 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4d7c3a2-2d5a-4da5-a3a8-eeed739f3946")
+	)
+	(wire
+		(pts
+			(xy 124.46 158.75) (xy 81.28 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8cd9ca0-fef0-4546-9233-2f1b7397c966")
+	)
+	(wire
+		(pts
+			(xy 152.4 140.97) (xy 152.4 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8fa47ac-64aa-4102-93e7-b22e0787f3fd")
+	)
+	(wire
+		(pts
+			(xy 105.41 46.99) (xy 165.1 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2317,17 +2428,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 129.54) (xy 140.97 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df35eb41-b5dd-4fd8-a270-e8ac59c6dd72")
-	)
-	(wire
-		(pts
-			(xy 106.68 58.42) (xy 166.37 58.42)
+			(xy 105.41 74.93) (xy 165.1 74.93)
 		)
 		(stroke
 			(width 0)
@@ -2337,114 +2438,115 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 53.34) (xy 166.37 53.34)
+			(xy 132.08 116.84) (xy 130.81 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f043a38c-c14b-4329-b617-6d172e80333e")
+		(uuid "f952f69e-bb3e-4e2d-a206-ceddc76232b7")
 	)
 	(wire
 		(pts
-			(xy 135.89 110.49) (xy 166.37 110.49)
+			(xy 160.02 121.92) (xy 160.02 170.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f9a4c7b5-218c-4434-ab96-fc0646ea1f4e")
+		(uuid "fe30bc3f-4ebb-4c0d-b831-8dd0bf23080e")
 	)
-	(wire
-		(pts
-			(xy 106.68 110.49) (xy 114.3 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fdab6969-135e-45af-95a7-bbbe54bd50a1")
-	)
-	(symbol
-		(lib_id "Isolator:TLP290")
-		(at 121.92 148.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+	(global_label "VBUS_1"
+		(shape bidirectional)
+		(at 81.28 133.35 180)
 		(fields_autoplaced yes)
-		(uuid "259d5cfb-9994-4eb5-8c5e-19af50670aed")
-		(property "Reference" "U2"
-			(at 121.92 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify right)
 		)
-		(property "Value" "TLP290"
-			(at 121.92 142.24 0)
+		(uuid "1d1fbf25-2d62-49e6-a1aa-6153f644eeec")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 70.1078 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOP-4_4.4x2.6mm_P1.27mm"
-			(at 100.33 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://toshiba.semicon-storage.com/info/docget.jsp?did=12882&prodName=TLP290"
-			(at 122.555 148.59 0)
+	)
+	(global_label "Control_inout1"
+		(shape bidirectional)
+		(at 81.28 158.75 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "869c85b6-2dfe-42b6-b26d-79f1bc5df5d8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.3348 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
-		(property "Description" "AC/DC Phototransistor Optocoupler, Vce 80V, CTR 50-600%, not recommended for new designs, SOP4"
-			(at 121.92 148.59 0)
+	)
+	(global_label "Control_inout2"
+		(shape bidirectional)
+		(at 81.28 173.99 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ae8c5d56-9310-4ba1-a793-ad7ed76b99e8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.3348 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "27b4519f-74fb-4400-886b-7088360f04cb")
+	)
+	(global_label "VBUS_2"
+		(shape bidirectional)
+		(at 81.28 140.97 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
 		)
-		(pin "4"
-			(uuid "dd072fb2-20d7-4deb-b497-ced0d5746c27")
-		)
-		(pin "1"
-			(uuid "3dac6718-93e0-4003-bb44-d8b5e327a189")
-		)
-		(pin "3"
-			(uuid "ea383a6d-0acc-4bcc-ae7a-79bfe65d30a0")
-		)
-		(instances
-			(project "power_controller_type_c"
-				(path "/b14fbb1d-2514-4a4d-ad89-bcd81585d776"
-					(reference "U2")
-					(unit 1)
+		(uuid "eecb0127-df37-4b3c-8880-efe692fdb05e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 70.1078 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
+				(justify right)
+				(hide yes)
 			)
 		)
 	)
 	(symbol
 		(lib_id "Isolator:TLP290")
-		(at 123.19 127 0)
+		(at 139.7 119.38 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2453,7 +2555,7 @@
 		(fields_autoplaced yes)
 		(uuid "506c0d17-307b-40f3-867d-9a7ad24bcf61")
 		(property "Reference" "U1"
-			(at 123.19 118.11 0)
+			(at 139.7 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2461,7 +2563,7 @@
 			)
 		)
 		(property "Value" "TLP290"
-			(at 123.19 120.65 0)
+			(at 139.7 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2469,7 +2571,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOP-4_4.4x2.6mm_P1.27mm"
-			(at 101.6 132.08 0)
+			(at 161.29 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2480,7 +2582,7 @@
 			)
 		)
 		(property "Datasheet" "https://toshiba.semicon-storage.com/info/docget.jsp?did=12882&prodName=TLP290"
-			(at 123.825 127 0)
+			(at 139.065 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2490,7 +2592,7 @@
 			)
 		)
 		(property "Description" "AC/DC Phototransistor Optocoupler, Vce 80V, CTR 50-600%, not recommended for new designs, SOP4"
-			(at 123.19 127 0)
+			(at 139.7 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2521,7 +2623,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:IRLZ44N")
-		(at 130.81 113.03 90)
+		(at 132.08 133.35 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2530,7 +2632,7 @@
 		(fields_autoplaced yes)
 		(uuid "52abd820-33c8-41b4-865d-b585ae20487b")
 		(property "Reference" "Q1"
-			(at 130.81 104.14 90)
+			(at 132.08 142.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2538,7 +2640,7 @@
 			)
 		)
 		(property "Value" "IRLZ44N"
-			(at 130.81 106.68 90)
+			(at 132.08 139.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2546,7 +2648,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 132.715 107.95 0)
+			(at 130.175 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2557,7 +2659,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf"
-			(at 134.62 107.95 0)
+			(at 128.27 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2567,7 +2669,7 @@
 			)
 		)
 		(property "Description" "47A Id, 55V Vds, 22mOhm Rds Single N-Channel HEXFET Power MOSFET, TO-220AB"
-			(at 130.81 113.03 0)
+			(at 132.08 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2595,7 +2697,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 114.3 115.57 0)
+		(at 148.59 130.81 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2604,25 +2706,25 @@
 		(fields_autoplaced yes)
 		(uuid "5701c8f9-9c5c-499e-9519-ae0a5cc51a3c")
 		(property "Reference" "R1"
-			(at 116.84 114.2999 0)
+			(at 151.13 129.5399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "100K"
-			(at 116.84 116.8399 0)
+			(at 151.13 132.0799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 112.522 115.57 90)
+			(at 150.368 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2631,7 +2733,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 114.3 115.57 0)
+			(at 148.59 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2640,7 +2742,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 114.3 115.57 0)
+			(at 148.59 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2665,16 +2767,16 @@
 	)
 	(symbol
 		(lib_id "Connector:USB_C_Plug")
-		(at 121.92 60.96 180)
+		(at 90.17 77.47 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7a4cc70b-5037-4f68-9e99-b66bce11b3e1")
 		(property "Reference" "P1"
-			(at 133.35 55.8799 0)
+			(at 78.74 72.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2683,7 +2785,7 @@
 			)
 		)
 		(property "Value" "USB_C_Plug"
-			(at 133.35 58.4199 0)
+			(at 78.74 74.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2692,7 +2794,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 60.96 0)
+			(at 93.98 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2701,7 +2803,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
-			(at 118.11 60.96 0)
+			(at 93.98 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2710,7 +2812,7 @@
 			)
 		)
 		(property "Description" "USB Type-C Plug connector"
-			(at 121.92 60.96 0)
+			(at 90.17 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2797,51 +2899,54 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:BZT52Bxx")
-		(at 135.89 121.92 0)
+		(lib_id "Transistor_FET:IRLZ44N")
+		(at 144.78 147.32 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "99a0a8fb-ca40-4243-b857-68bbb900fe88")
-		(property "Reference" "D1"
-			(at 135.89 115.57 0)
+		(uuid "8edbb09e-e3de-4ced-96bc-0e99ccebfe18")
+		(property "Reference" "Q2"
+			(at 144.78 138.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "BZT52Bxx"
-			(at 135.89 118.11 0)
+		(property "Value" "IRLZ44N"
+			(at 144.78 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123F"
-			(at 135.89 126.365 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(at 146.685 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(italic yes)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf"
-			(at 135.89 121.92 0)
+		(property "Datasheet" "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf"
+			(at 148.59 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Description" "500mW Zener Diode, SOD-123F"
-			(at 135.89 121.92 0)
+		(property "Description" "47A Id, 55V Vds, 22mOhm Rds Single N-Channel HEXFET Power MOSFET, TO-220AB"
+			(at 144.78 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2850,84 +2955,18 @@
 			)
 		)
 		(pin "2"
-			(uuid "9d643f18-0202-40d0-8988-8cbecd72f64e")
+			(uuid "65b0c9e6-266b-41e2-a6cc-c832316abcde")
 		)
 		(pin "1"
-			(uuid "6243fab9-cee4-41ff-8e6d-46d75f1014ea")
+			(uuid "e2e1ed8e-e31c-4af8-b4b8-ef3f6c0ca91b")
+		)
+		(pin "3"
+			(uuid "9f4ef18f-1064-4524-b9df-c96ab23cac89")
 		)
 		(instances
-			(project ""
+			(project "power_controller_type_c"
 				(path "/b14fbb1d-2514-4a4d-ad89-bcd81585d776"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 147.32 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9eb50a68-cc66-4eb2-883f-4f8c5628f6b1")
-		(property "Reference" "C1"
-			(at 151.13 132.0799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 151.13 134.6199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.2852 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 147.32 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "98b5082d-723f-477b-8eac-6dc2ebdf01e3")
-		)
-		(pin "1"
-			(uuid "90211188-77e1-4bb6-84c0-d5bfc67975c4")
-		)
-		(instances
-			(project ""
-				(path "/b14fbb1d-2514-4a4d-ad89-bcd81585d776"
-					(reference "C1")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -2935,34 +2974,31 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 148.59 123.19 0)
+		(at 149.86 163.83 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cd10c64b-cde1-4d37-922d-4bd20978e6a1")
-		(property "Reference" "R2"
-			(at 151.13 121.9199 0)
+		(uuid "9247b77c-52c8-4f91-aa1d-ac3b3a4ff318")
+		(property "Reference" "R4"
+			(at 149.86 157.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "100"
-			(at 151.13 124.4599 0)
+			(at 149.86 160.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 146.812 123.19 90)
+			(at 149.86 165.608 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2971,7 +3007,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 148.59 123.19 0)
+			(at 149.86 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2980,7 +3016,74 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 148.59 123.19 0)
+			(at 149.86 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1626a2b2-fa6c-48cc-953d-b3ca430927bc")
+		)
+		(pin "2"
+			(uuid "e951d8a6-f422-4931-ad35-bc4fe6d7e775")
+		)
+		(instances
+			(project "power_controller_type_c"
+				(path "/b14fbb1d-2514-4a4d-ad89-bcd81585d776"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 127 116.84 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cd10c64b-cde1-4d37-922d-4bd20978e6a1")
+		(property "Reference" "R2"
+			(at 127 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 127 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 115.062 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 127 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3004,8 +3107,155 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 128.27 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf2fcf47-c466-4aa2-8d9b-de7d254d79b7")
+		(property "Reference" "R3"
+			(at 130.81 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100K"
+			(at 130.81 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 126.492 149.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 128.27 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ea0c235b-3195-4cc9-81f2-0e93e511653f")
+		)
+		(pin "2"
+			(uuid "0161fd00-6fd9-47ae-af24-5d4afc5d1d4d")
+		)
+		(instances
+			(project "power_controller_type_c"
+				(path "/b14fbb1d-2514-4a4d-ad89-bcd81585d776"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Isolator:TLP290")
+		(at 137.16 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e180c706-2c2f-4db5-ab3d-3d5244783e58")
+		(property "Reference" "U2"
+			(at 137.16 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TLP290"
+			(at 137.16 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOP-4_4.4x2.6mm_P1.27mm"
+			(at 115.57 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://toshiba.semicon-storage.com/info/docget.jsp?did=12882&prodName=TLP290"
+			(at 137.795 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "AC/DC Phototransistor Optocoupler, Vce 80V, CTR 50-600%, not recommended for new designs, SOP4"
+			(at 137.16 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "203f61f6-4950-4488-8b26-ed67c78559b6")
+		)
+		(pin "4"
+			(uuid "8b2aba1e-4698-4760-916d-146c51bae506")
+		)
+		(pin "1"
+			(uuid "3e0a37cc-6f00-4787-9272-b513ce5073c8")
+		)
+		(pin "3"
+			(uuid "a7c7f19f-47d9-4b49-bb5d-28576df653db")
+		)
+		(instances
+			(project "power_controller_type_c"
+				(path "/b14fbb1d-2514-4a4d-ad89-bcd81585d776"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:USB_C_Plug")
-		(at 181.61 60.96 180)
+		(at 180.34 77.47 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3014,7 +3264,7 @@
 		(fields_autoplaced yes)
 		(uuid "e6e7414c-34de-4cde-ac8d-f0ab263c8f6f")
 		(property "Reference" "P2"
-			(at 193.04 55.8799 0)
+			(at 191.77 72.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3023,7 +3273,7 @@
 			)
 		)
 		(property "Value" "USB_C_Plug"
-			(at 193.04 58.4199 0)
+			(at 191.77 74.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3032,7 +3282,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 177.8 60.96 0)
+			(at 176.53 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3041,7 +3291,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
-			(at 177.8 60.96 0)
+			(at 176.53 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3050,7 +3300,7 @@
 			)
 		)
 		(property "Description" "USB Type-C Plug connector"
-			(at 181.61 60.96 0)
+			(at 180.34 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3131,80 +3381,6 @@
 			(project "power_controller_type_c"
 				(path "/b14fbb1d-2514-4a4d-ad89-bcd81585d776"
 					(reference "P2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:IRLZ44N")
-		(at 143.51 148.59 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f5f72e3a-c2c1-4116-a9c0-53d1431a28af")
-		(property "Reference" "Q2"
-			(at 143.51 139.7 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "IRLZ44N"
-			(at 143.51 142.24 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 145.415 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf"
-			(at 147.32 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "47A Id, 55V Vds, 22mOhm Rds Single N-Channel HEXFET Power MOSFET, TO-220AB"
-			(at 143.51 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1ae3e9da-5672-474d-b4ad-31a9722ad3d1")
-		)
-		(pin "1"
-			(uuid "d4086a51-6f43-48c9-a22e-cbc85166da42")
-		)
-		(pin "3"
-			(uuid "de9b2c16-b7ba-4add-9e04-709c9b9aeed1")
-		)
-		(instances
-			(project "power_controller_type_c"
-				(path "/b14fbb1d-2514-4a4d-ad89-bcd81585d776"
-					(reference "Q2")
 					(unit 1)
 				)
 			)
